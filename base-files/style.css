@@ -1,0 +1,48 @@
+/* Fonts */
+@font-face {
+    font-family: "MinecraftTen";
+    src: url("/sprites/fonts/minecraft-ten.otf");
+}
+
+@font-face {
+    font-family: "InterBlack";
+    src: url("/sprites/fonts/inter-black.ttf");
+}
+
+
+/* Styles */
+:root {
+    --color-primary-toned-light: hsl(215, 80%, 65%);
+    --color-1-light: hsla(215, 30%, 90%, 0.8);
+    --color-2-light: hsl(215, 30%, 80%);
+    --text-color-light: hsl(215, 10%, 5%);
+    --svg-icon-color-light: invert(4%) sepia(7%) saturate(916%) hue-rotate(155deg) brightness(94%) contrast(98%);
+
+    --color-primary-toned-dark: hsl(215, 55%, 20%);
+    --color-1-dark: hsla(215, 15%, 10%, 0.9);
+    --color-2-dark: hsl(215, 15%, 20%);
+    --text-color-dark: hsl(215, 100%, 95%);
+    --svg-icon-color-dark: invert(97%) sepia(96%) saturate(2553%) hue-rotate(178deg) brightness(105%) contrast(108%);
+
+    --color-black: hsl(0, 0%, 0%);
+    --color-lighter-black: hsl(0, 0%, 13%);
+    --color-primary: hsl(215, 75%, 50%);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --color-primary-toned: var(--color-primary-toned-light);
+    --color-1: var(--color-1-light);
+    --color-2: var(--color-2-light);
+    --text-color:  var(--text-color-light);
+    --svg-icon-color: var(--svg-icon-color-light);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-primary-toned: var(--color-primary-toned-dark);
+    --color-1: var(--color-1-dark);
+    --color-2: var(--color-2-dark);
+    --text-color:  var(--text-color-dark);
+    --svg-icon-color: var(--svg-icon-color-dark);
+}

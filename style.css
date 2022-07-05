@@ -1,0 +1,246 @@
+
+/* Styles */
+body {
+    margin: 0px;
+    
+    color: var(--text-color);
+}
+
+/*top bar*/
+#topbar {
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 3em;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-primary);
+    border-width: 0 0 0.2em 0;
+    border-style: solid;
+}
+
+#topbar > .icon-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.4em 0 0.1em;
+
+    text-decoration: none;
+}
+
+#topbar > .icon-container > img {
+    height: 2.4em;
+    width: 2.4em;
+    padding: 0.3em;
+
+    border-radius: 10px;
+}
+
+#topbar > .icon-container > span {
+    display: block;
+    margin: auto 0.1em;
+
+    color: var(--text-color);
+    font-family: MinecraftTen;
+    font-size: larger;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px var(--color-primary);
+
+}
+
+
+#topbar > .links-container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin: 0.25em 1em 0 0.4em;
+
+    text-decoration: none;
+}
+
+#topbar > .links-container > a {
+    margin-top: 0.15em;
+    padding: 0.2em 1em 1em 1em;
+
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: InterBlack;
+
+    -webkit-transition: 0s !important;
+	transition: 0s !important;
+}
+
+#topbar > .links-container > a:hover {
+    margin-top: 0em;
+
+    background-color: var(--color-primary-toned-dark);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-lighter-black);
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+}
+
+#topbar > .links-container > a.current-page {
+    margin-top: 0em;
+
+    background-color: var(--color-primary);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-black);
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+}
+
+
+#topbar > .tri-dash-menu {
+    margin: 0 1em 0 0.4em;
+}
+
+#topbar > .tri-dash-menu > .button {
+    height: 3em;
+}
+
+#topbar > .tri-dash-menu:hover > .button {
+    background-color: var(--color-primary-toned-dark);
+}
+
+#topbar > .tri-dash-menu.open > .button {
+    background-color: var(--color-primary);
+}
+
+#topbar > :is(.tri-dash-menu.open, .tri-dash-menu:hover) > .button > img {
+    filter: var(--svg-icon-color-dark);
+}
+
+#topbar > .tri-dash-menu > .button > img {
+    height: 2.4em;
+    width: 2.4em;
+    padding: 0.3em;
+
+    filter: var(--svg-icon-color);
+
+    cursor: pointer;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown {
+    position: absolute;
+    right: 0;
+    top: 3.2em;
+    z-index: 99;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 10em;
+    height: 20em;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-primary);
+    border-width: 0 0 0.2em 0.2em;
+    border-style: solid;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a {
+    margin-top: 0.15em;
+    padding: 1.2em 0 1.2em 0;
+
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    font-family: InterBlack;
+
+    -webkit-transition: 0s !important;
+	transition: 0s !important;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a:hover {
+    margin-top: 0em;
+
+    background-color: var(--color-primary-toned-dark);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-lighter-black);
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a.current-page {
+    margin-top: 0em;
+
+    background-color: var(--color-primary);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-black);
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+}
+
+#topbar > .tri-dash-menu:not(.open) > .links-dropdown {
+    display: none;
+}
+
+@media only screen and (max-width: 549px) {
+    #topbar > .links-container {
+        display: none !important;
+    }
+
+    #topbar > .tri-dash-menu {
+        display: block !important;
+    }
+}
+
+/*main content*/
+#content {
+    background-image: url("/sprites/images/blue-ice.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 10%;
+    /*pointer-events: none;*/
+}
+
+#content > div {
+    height: 10000px;
+
+    background-color: var(--color-1);
+}
+
+
+/*footer*/
+#footer {
+    height: 5em;
+
+    background-color: var(--color-lighter-black);
+}
+
+/*noscript*/
+noscript {
+    position: fixed;
+    bottom: 10px;
+    left: 5%;
+
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+    animation: noscript-popup 2s;
+}
+
+noscript #noscript-text {
+    padding: 20px;
+
+    color: white;
+    font-family: Arial;
+    text-align: center;
+
+    background-color: rgba(15, 15, 15, 0.85);
+}
