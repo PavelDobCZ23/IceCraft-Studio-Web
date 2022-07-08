@@ -1,4 +1,3 @@
-
 /* Styles */
 body {
     margin: 0px;
@@ -8,25 +7,120 @@ body {
 
 /*main content*/
 #content {
+    pointer-events: none;
     background-image: url("/sprites/images/blue-ice.png");
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size: 10%;
+    background-size: 96px;
+
+    image-rendering: pixelated;
     /*pointer-events: none;*/
 }
 
-#content > div {
-    height: 10000px;
+#content > .container {
+    display: flex;
+    min-height: 100vh;
 
     background-color: var(--color-1);
+
+    image-rendering: optimizeQuality;
+}
+
+#content > .container > .center-part {
+    display: flex;
+    flex: 1 0;
+    flex-direction: column;
+    padding: 16px;
+
+    font-family: Cabin;
+    font-size: xx-large;
+    font-weight: 750;
+    text-align: center;
+}
+
+@media only screen and (max-width: 699px) {
+    #content > .container > .left-part {
+        display: none;
+    }
+    
+    #content > .container > .right-part {
+        display: none;
+    }
+}
+
+#content > .container > .left-part {
+    flex: 0 0 20%;
+}
+
+#content > .container > .right-part {
+    flex: 0 0 20%;
+}
+
+#content > .container > .center-part > img {
+    width: 100%;
+    height: min-content;
+    align-self: center;
+    margin: 2em 0 2em 0;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    pointer-events: none;
 }
 
 
 /*footer*/
 #footer {
-    height: 5em;
+    display: flex;
+
+    color: var(--text-color-dark);
+    font-family: Gantari;
 
     background-color: var(--color-lighter-black);
+}
+
+#footer > div {
+    align-self: center;
+
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer > .left-part {
+    flex: 1 0 auto;
+}
+
+#footer > .right-part {
+    flex: 1 1 auto;
+}
+
+#footer > .right-part > span {
+    color: hsl(0, 100%, 68%);
+}
+
+#footer > .right-part > a {
+    color: var(--color-link-dark);
+}
+
+#footer > div > :is(span, a) {
+    margin: 16px;
+}
+
+@media only screen and (max-width: 559px) {
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer > div {
+        align-self: flex-start;
+    }
+
+    #footer > div > :is(span, a) {
+        margin:8px;
+    }
 }
 
 /*noscript*/
@@ -38,8 +132,6 @@ noscript {
     width: 90%;
     height: auto;
     margin: auto;
-
-    animation: noscript-popup 2s;
 }
 
 noscript #noscript-text {
