@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1042"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="mcpedl-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title21746">Mcpedl Icon</title>
+  <sodipodi:namedview
+     id="namedview1044"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6613524"
+     inkscape:cx="193.21608"
+     inkscape:cy="210.37078"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1039">
+    <rect
+       x="34.309397"
+       y="95.10324"
+       width="42.73626"
+       height="46.949699"
+       id="rect3833" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="M 7.1039965,13.53938 H 22.042902 q 14.464658,0 19.539142,1.261157 5.121911,1.261134 7.777716,4.143752 2.655806,2.882618 3.319759,6.440852 0.66395,3.513197 0.66395,13.872611 v 25.538174 q 0,9.818934 -0.995927,13.151956 -0.948502,3.287983 -3.367183,5.179695 -2.418678,1.846675 -5.975561,2.61239 -3.556883,0.720655 -10.718074,0.720655 H 7.1039965 Z M 27.069964,26.01572 v 47.968562 q 4.315685,0 5.311611,-1.621484 0.995927,-1.666499 0.995927,-8.96312 V 35.068939 q 0,-4.954505 -0.331977,-6.350776 -0.331974,-1.396271 -1.517603,-2.026827 -1.185627,-0.675616 -4.457958,-0.675616 z"
+       id="path826"
+       style="font-size:40px;line-height:1.25;font-family:Impact;-inkscape-font-specification:Impact;letter-spacing:0px;white-space:pre;stroke-width:2.36634" />
+    <path
+       d="M 80.755179,13.53938 V 71.867357 H 92.896005 V 86.460622 H 60.789212 V 13.53938 Z"
+       id="path828"
+       style="font-size:40px;line-height:1.25;font-family:Impact;-inkscape-font-specification:Impact;letter-spacing:0px;white-space:pre;stroke-width:2.36634" />
+  </g>
+  <metadata
+     id="metadata21744">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Mcpedl Icon</dc:title>
+        <dc:identifier>mcpedl-icon</dc:identifier>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

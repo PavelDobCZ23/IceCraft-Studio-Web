@@ -1,0 +1,119 @@
+#content > .container > .center-part > h1 {
+    max-width: 100%;
+}
+
+#content > .container > .center-part > .links-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+}
+
+#content > .container > .center-part > .links-container > div {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 13em;
+
+    font-size: 1.5rem;
+}
+
+#content > .container > .center-part > .links-container > div > a {
+    display: flex;
+    margin: 0.3em;
+    padding: 0.15em 0.6em;
+    box-sizing: border-box;
+    width: calc(100% - 1em);
+    align-self: center;
+
+    border-radius: 0.75em;
+    background-color: var(--color-primary);
+
+    text-decoration: none;
+    color: var(--text-color-dark);
+
+    transition: border-radius 0.2s;
+}
+
+#content > .container > .center-part > .links-container > div > a:hover {
+    border-radius: 0.3em;
+}
+
+#content > .container > .center-part > .links-container > div > a > img {
+    height: 1.6em;
+    width: 1.6em;
+    padding: 0.2em;
+
+    filter: var(--svg-icon-color-dark);
+}
+
+#content > .container > .center-part > .links-container > div > a.discord-link {
+    background-color: hsl(235, 83%, 59%);
+}
+
+#content > .container > .center-part > .links-container > div > a.trello-link {
+    background-color: hsl(202, 100%, 37%);
+}
+
+#content > .container > .center-part > .links-container > div > a.mcpedl-link {
+    background-color: hsl(136, 99%, 33%);
+}
+
+#content > .container > .center-part > .links-container > div > a.github-link {
+    background-color: hsl(0, 10%, 10%);
+}
+
+#content > .container > .center-part > .links-container > div > a.reddit-link {
+    background-color: hsl(16, 100%, 50%);
+}
+
+#content > .container > .center-part > .links-container > div > a.instagram-link {
+    background-color: hsl(328, 60%, 49%);
+}
+
+#content > .container > .center-part > .links-container > div > a.twitter-link {
+    background-color: hsl(203, 79%, 53%);
+}
+
+#content > .container > .center-part > .links-container > div > a.discord-link:hover {
+    background-color: hsl(235, 73%, 49%);
+}
+
+#content > .container > .center-part > .links-container > div > a.trello-link:hover {
+    background-color: hsl(202, 90%, 27%);
+}
+
+#content > .container > .center-part > .links-container > div > a.mcpedl-link:hover {
+    background-color: hsl(136, 89%, 23%);
+}
+
+#content > .container > .center-part > .links-container > div > a.github-link:hover {
+    background-color: hsl(0, 0%, 0%);
+}
+
+#content > .container > .center-part > .links-container > div > a.reddit-link:hover {
+    background-color: hsl(16, 90%, 40%);
+}
+
+#content > .container > .center-part > .links-container > div > a.instagram-link:hover {
+    background-color: hsl(328, 50%, 39%);
+}
+
+#content > .container > .center-part > .links-container > div > a.twitter-link:hover {
+    background-color: hsl(203, 79%, 43%);
+}
+
+#content > .container > .center-part > .links-container > div > a > span {
+    display: block;
+    margin: auto auto;
+
+    font-family: Gantari;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 22.5rem) {
+    #content > .container > .center-part > .links-container > div {
+        font-size: 1.1rem;
+    }
+}

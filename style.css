@@ -1,5 +1,6 @@
 #content > .container > .center-part > img {
-    width: 100%;
+    width: 90%;
+    max-width: 999px;
     height: min-content;
     align-self: center;
     margin: 2rem 0 2rem 0;
@@ -9,4 +10,8 @@
     -webkit-user-select: none;
 
     pointer-events: none;
+}
+
+#content > .container > .center-part > h1 {
+    font-size: 2.2rem;
 }

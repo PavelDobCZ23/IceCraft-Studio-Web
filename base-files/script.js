@@ -1,8 +1,8 @@
 console.log(window.location.href);
 
-screenSizeAlert();
 initializeDropdownLinks();
 setThemeIcon(document.documentElement.dataset.theme);
+screenSizeAlert();
 
 
 document.querySelector('#topbar > .tri-dash-menu > .button').addEventListener('pointerdown', toggleLinkDropdown);
@@ -10,8 +10,11 @@ document.querySelector('#topbar > .tri-dash-menu > .button').addEventListener('p
 
 
 function screenSizeAlert() {
-	if (screen.width < 280) {
-		alert(`Your screen size is unsupported!\nYou might experience issues because width of your screen is less than 280px.\n\nScreen width = ${screen.width}px`);
+	/*const FONT_SIZE_CONSTANT = 17.5;*/
+	const fontSize = parseInt(getComputedStyle(document.documentElement).fontSize.match(/\d+/));
+	const supportedSize = 17.5 * fontSize;
+	if (screen.width < supportedSize) {
+		alert(`Your screen size is unsupported!\nYou might experience issues because the width of your screen is less than ${Math.round(supportedSize)}px. Try lowering your default font size to prevent this.\n\nScreen width = ${screen.width}px\nFont size = ${fontSize}px`);
 	}
 }
 

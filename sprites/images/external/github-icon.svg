@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg:svg
+   width="36"
+   height="36"
+   viewBox="0 0 36 36"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="github.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <svg:title
+     id="title845">GitHub Icon</svg:title>
+  <svg:defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="12.683024"
+     inkscape:cx="4.4153509"
+     inkscape:cy="17.858518"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <svg:path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 18,2.3947176 c -8.84,0 -16,7.16 -16,16.0000004 0,7.08 4.58,13.06 10.94,15.18 0.8,0.14 1.1,-0.34 1.1,-0.76 0,-0.38 -0.02,-1.64 -0.02,-2.98 -4.02,0.74 -5.06,-0.98 -5.38,-1.88 -0.18,-0.46 -0.96,-1.88 -1.64,-2.26 -0.56,-0.3 -1.36,-1.04 -0.02,-1.06 1.26,-0.02 2.16,1.16 2.46,1.64 1.44,2.42 3.74,1.74 4.66,1.32 0.14,-1.04 0.56,-1.74 1.02,-2.14 -3.56,-0.4 -7.28,-1.78 -7.28,-7.9 0,-1.74 0.62,-3.18 1.64,-4.3 -0.16,-0.4 -0.72,-2.04 0.16,-4.2400004 0,0 1.34,-0.42 4.4,1.6400004 1.28,-0.36 2.64,-0.54 4,-0.54 1.36,0 2.72,0.18 4,0.54 3.06,-2.0800004 4.4,-1.6400004 4.4,-1.6400004 0.88,2.2000004 0.32,3.8400004 0.16,4.2400004 1.02,1.12 1.64,2.54 1.64,4.3 0,6.14 -3.74,7.5 -7.3,7.9 0.58,0.5 1.08,1.46 1.08,2.96 0,2.14 -0.02,3.86 -0.02,4.4 0,0.42 0.3,0.92 1.1,0.76 6.32,-2.12 10.9,-8.12 10.9,-15.18 C 34,9.5547176 26.84,2.3947176 18,2.3947176 Z"
+     fill="#ffffff"
+     id="path2"
+     style="fill:#000000" />
+  <div
+     id="divScriptsUsed"
+     style="display: none" />
+  <script
+     id="globalVarsDetection"
+     src="moz-extension://3cf8dc05-f101-4814-a0d8-e512cb1c35be/js/wrs_env.js" />
+  <svg:metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>GitHub Icon</dc:title>
+        <dc:identifier>github-icon</dc:identifier>
+        <dc:source>https://github.com/</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>GitHub, Inc.</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </svg:metadata>
+</svg:svg>

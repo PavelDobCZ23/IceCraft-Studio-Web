@@ -27,8 +27,6 @@
 
 
 :root {
-    font-size: 16px !important;
-
     --color-primary-toned-light: hsl(215, 80%, 65%);
     --color-1-light: hsla(215, 30%, 90%, 0.8);
     --color-2-light: hsl(215, 30%, 80%);
@@ -97,7 +95,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 3rem;
+    z-index: 99;
 
     background-color: var(--color-2);
 
@@ -117,7 +115,7 @@ body {
 
     cursor: pointer;
 
-    border-width: 0.2rem;
+    border-width: 0.2em;
     border-color: var(--text-color);
     border-style: solid;
 }
@@ -127,9 +125,9 @@ body {
 }
 
 #topbar > .theme-toggle img {
-    height: 1.5rem;
-    width: 1.5rem;
-    padding: 0.3rem;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.3em;
 
     image-rendering: pixelated;
 }
@@ -137,7 +135,7 @@ body {
 #topbar > .icon-container {
     display: flex;
     flex-direction: row;
-    padding: 0 0.4rem 0 0.1rem;
+    padding: 0 0.4em 0 0.1em;
 
     text-decoration: none;
 }
@@ -167,7 +165,7 @@ body {
     display: flex;
     flex-direction: row;
     flex: 0 0 auto;
-    margin: 0.25rem 0.9rem 0 0.4rem;
+    margin: 0.25rem 14px 0 0.4rem;
 
     text-decoration: none;
 }
@@ -182,7 +180,7 @@ body {
     background-color: var(--color-2);
 
     border-color: var(--color-2);
-    border-width: 0.15rem 0 0 0;
+    border-width: 0.15em 0 0 0;
     border-style: solid;
 }
 
@@ -202,11 +200,12 @@ body {
 
 
 #topbar > .tri-dash-menu {
-    margin: 0 0.9rem 0 0.4rem;
+    display: none;
+    margin: 0 14px 0 0.4rem;
 }
 
 #topbar > .tri-dash-menu > .button {
-    height: 3rem;
+    height: 100%;
 }
 
 #topbar > .tri-dash-menu:hover > .button {
@@ -234,24 +233,22 @@ body {
 #topbar > .tri-dash-menu.open > .links-dropdown {
     position: absolute;
     right: 0;
-    top: 3.2rem;
-    z-index: 99;
 
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     width: 10rem;
-    height: 20rem;
 
     background-color: var(--color-2);
 
     border-color: var(--color-primary);
-    border-width: 0 0 0.2rem 0.2rem;
+    border-width: 0.2rem 0 0.2rem 0.2rem;
     border-style: solid;
 }
 
 #topbar > .tri-dash-menu.open > .links-dropdown > a {
-    padding: 1.2rem 0 1.2rem 0;
+    padding: 1.2em 0 1.2em 0;
+    margin: 0.4em 0;
 
     color: var(--text-color);
     text-decoration: none;
@@ -261,7 +258,7 @@ body {
     background-color: var(--color-2);
 
     border-color: var(--color-2);
-    border-width: 0.15rem 0 0 0;
+    border-width: 0.15em 0 0 0;
     border-style: solid;
 }
 
@@ -283,7 +280,7 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 37.5rem) {
     #topbar > .links-container {
         display: none !important;
     }
@@ -310,15 +307,16 @@ body {
 
     background-color: var(--color-1);
 
-    image-rendering: optimizeQuality;
+    image-rendering: auto;
 }
 
 #content > .container > .center-part {
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     padding: 16px;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
 
     font-family: Ubuntu;
     font-size: 2rem;
@@ -326,7 +324,7 @@ body {
     text-align: center;
 }
 
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 59rem) {
     #content > .container > .center-part {
         width: 100%;
     }
@@ -369,10 +367,10 @@ body {
 }
 
 #footer > div > :is(span, a) {
-    margin: 16px;
+    margin: 1em;
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 35rem) {
     #footer {
         flex-direction: column;
     }
@@ -382,7 +380,7 @@ body {
     }
 
     #footer > div > :is(span, a) {
-        margin: 8px;
+        margin: 0.5rem;
     }
 }
 
@@ -398,7 +396,7 @@ noscript {
 }
 
 noscript #noscript-text {
-    padding: 20px;
+    padding: 1.2em;
 
     color: white;
     font-family: Arial;
