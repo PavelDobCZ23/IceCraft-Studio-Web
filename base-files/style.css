@@ -115,6 +115,8 @@ body {
 
     cursor: pointer;
 
+    background-color: var(--color-2);
+
     border-width: 0.2em;
     border-color: var(--text-color);
     border-style: solid;
@@ -209,14 +211,14 @@ body {
 }
 
 #topbar > .tri-dash-menu:hover > .button {
-    background-color: var(--color-primary-toned-dark);
+    background-color: var(--color-primary-toned);
 }
 
 #topbar > .tri-dash-menu.open > .button {
     background-color: var(--color-primary);
 }
 
-#topbar > :is(.tri-dash-menu.open, .tri-dash-menu:hover) > .button > img {
+#topbar > .tri-dash-menu.open > .button > img {
     filter: var(--svg-icon-color-dark);
 }
 
