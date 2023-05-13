@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <!-- Scripts -->
+    <script src="/base-files/web-theme.js"></script>
+    <script src="/base-files/script.js" defer></script>
+    <script src="script.js" defer></script>
+    <!-- Title -->
+    <title>IceCraft Studio</title>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Links -->
+    <link href="/sprites/images/icecraft-icon.svg" rel="icon">
+    <link href="/base-files/style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav id="topbar">
+        <a class="icon-container" href="/" title="IceCraft Studio">
+            <img src="/sprites/images/icecraft-icon.svg" alt="IceCraft icon">
+            <span translate="no">IceCraft Studio</span>
+        </a>
+        <button class="theme-toggle" title="Toggle Website Theme">
+            <img src="/sprites/images/sun-moon-icon.png" alt="sun moon icon">
+        </button>
+        <div class="links-container">
+            <a href="/" hreflang="en" title="The home page of our web.">
+                Home
+            </a>
+            <a class="current-page" href="/projects/" hreflang="en" title="Check out our maps, addons and more.">
+                Projects
+            </a>
+            <a href="/mc-tips/" hreflang="en" title="Useful tips for minecrafters.">
+                MC Tips
+            </a>
+            <a href="/links/" hreflang="en" title="Links to our social media accounts and other platforms.">
+                Links
+            </a>
+        </div>
+        <!-- Small viewport fallback (doesn't work without scripts)-->
+        <div class="tri-dash-menu">
+            <button class="dash-menu-toggle">
+                <img src="/sprites/images/tri-dash-icon.svg">
+            </button>
+            <div class="links-dropdown">
+                <!-- Contents of this element are inserted via a script (to avoid duplicate) from #topbar > .links-container -->
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <button onclick="jumpTo('#overview')">Overview</button>
+            <button onclick="jumpTo('#details')">Details</button>
+            <button onclick="jumpTo('#screenshots')">Screenshots</button>
+            <button onclick="jumpTo('#downloads')">Downloads</button>
+            <button onclick="jumpTo('#changelog')">Changelog</button>
+        </div>
+        <div class="sidebar compact">
+            <!-- Contents of this element are inserted via a script (to avoid duplicate) from #main-content > .sidebar -->
+        </div>
+        <div class="project-page">
+            <div id="overview">
+                <div class="basic">
+                    <h1>vEEEERRRRRY LONGGG Project Name</h1>
+                    <div class="tags">
+                        <span class="type-tag" data-type="addon">Add-on</span>
+                        <span class="version-tag">MC:BE 1.19.10+</span>
+                    </div>
+                </div>
+                <img class="thumbnail" src="../test/thumbnail.png">
+                <p></p>
+
+            </div>
+            <div id="details">
+                <p>
+                    This is a very cool pack IKR. A template pack for whoknowswhat just an example i need something to have in there.
+                </p>
+            </div>
+            <div id="screenshots">
+                <img>
+                <img>
+            </div>
+            <div id="downloads">
+                <button>
+                    <img src="./../../sprites/images/external/github-icon.svg">
+                    <a>GitHub Download</a> 
+                </button>
+            </div>
+            <div id="changelog">
+                <div>
+                    <h3>Version 1.1</h3>
+                    <ul>
+                        <li>Something something</li>
+                        <li>Added new something</li>
+                        <li>Something something</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="left-part">
+            <span>Made by PavelDobCZ23</span>
+            <span>IceCraft Studio 2020 - 2022 ©</span>
+        </div>
+        <div class="right-part">
+            <span>Not affiliated with Mojang Studios or Microsoft Corporation</span>
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Our Content License</a>
+        </div>
+    </footer>
+    <!-- Disabled JavaScript -->
+    <noscript>
+        <div id="noscript-text">
+            You have got JavaScript disabled in your browser! Many features of the website will not function, consider
+            enabling it for the website to work properly.
+        </div>
+    </noscript>
+</body>
+
+</html>

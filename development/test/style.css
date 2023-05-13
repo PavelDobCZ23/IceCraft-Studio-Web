@@ -1,0 +1,455 @@
+/* Fonts */
+@font-face {
+    font-family: "MinecraftTen";
+    src: url("/sprites/fonts/minecraft-ten.otf");
+}
+
+@font-face {
+    font-family: "InterBlack";
+    src: url("/sprites/fonts/inter-black.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/sprites/fonts/ubuntu-regular.ttf");
+}
+
+@font-face {
+    font-family: "Gantari";
+    src: url("/sprites/fonts/gantari-regular.ttf");
+}
+
+/* Styles */
+* {
+    transition-duration: 0.2s;
+    transition-property: background-color, color, border-color, text-shadow, box-shadow;
+}
+
+
+:root {
+    --responsive-threshold: 59rem; /* Useless for now */
+
+    /* Colours */
+    --color-primary-toned-light: hsl(215, 80%, 65%);
+    --color-1-light: hsla(215, 30%, 90%, 0.8);
+    --color-2-light: hsl(215, 30%, 80%);
+    --text-color-light: hsl(215, 10%, 5%);
+    --svg-icon-color-light: invert(4%) sepia(7%) saturate(916%) hue-rotate(155deg) brightness(94%) contrast(98%);
+    --color-pure-contrast-light: hsl(0, 0%, 0%);
+    --color-contrast-light: hsl(0, 0%, 13%);
+    --color-link-light: hsl(210, 100%, 40%);
+    --color-link-hover-light: hsl(210, 100%, 40%);
+    --color-link-visitied-light: hsl(210, 100%, 40%);
+
+    --color-primary-toned-dark: hsl(215, 55%, 25%);
+    --color-1-dark: hsla(215, 15%, 10%, 0.9);
+    --color-2-dark: hsl(215, 15%, 20%);
+    --text-color-dark: hsl(215, 100%, 95%);
+    --svg-icon-color-dark: invert(97%) sepia(96%) saturate(2553%) hue-rotate(178deg) brightness(105%) contrast(108%);
+    --color-pure-contrast-dark: hsl(0, 0%, 100%);
+    --color-contrast-dark: hsl(0, 0%, 87%);
+    --color-link-dark: hsl(240, 100%, 77%);
+    --color-link-hover-dark: hsl(240, 100%, 77%);;
+    --color-link-visitied-dark: hsl(240, 100%, 77%);;
+
+    --color-black: hsl(0, 0%, 0%);
+    --color-lighter-black: hsl(0, 0%, 13%);
+    --color-primary: hsl(215, 75%, 50%);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --color-primary-toned: var(--color-primary-toned-light);
+    --color-1: var(--color-1-light);
+    --color-2: var(--color-2-light);
+    --text-color:  var(--text-color-light);
+    --svg-icon-color: var(--svg-icon-color-light);
+    --color-pure-contrast: var(--color-pure-contrast-light);
+    --color-contrast: var(--color-contrast-light);
+    --color-pure-anticontrast: var(--color-pure-contrast-dark);
+    --color-anticontrast: var(--color-contrast-dark);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-primary-toned: var(--color-primary-toned-dark);
+    --color-1: var(--color-1-dark);
+    --color-2: var(--color-2-dark);
+    --text-color:  var(--text-color-dark);
+    --svg-icon-color: var(--svg-icon-color-dark);
+    --color-pure-anticontrast: var(--color-pure-contrast-light);
+    --color-anticontrast: var(--color-contrast-light);
+}
+
+/* Styles */
+body {
+    margin: 0px;
+    
+    color: var(--text-color);
+    /*pointer-events: none;*/
+    background-image: url("/sprites/images/blue-ice.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 96px;
+
+    image-rendering: pixelated;
+}
+
+
+/*top bar*/
+#topbar {
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-primary);
+    border-width: 0 0 0.2rem 0;
+    border-style: solid;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#topbar > .theme-toggle {
+    display: flex;
+    margin-left: auto;
+    align-self: center;
+
+    cursor: pointer;
+
+    background-color: var(--color-2);
+
+    border-width: 0.2em;
+    border-color: var(--text-color);
+    border-style: solid;
+}
+
+#topbar > .theme-toggle:hover {
+    background-color: var(--color-primary-toned);
+}
+
+#topbar > .theme-toggle img {
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.3em;
+
+    image-rendering: pixelated;
+}
+
+#topbar > .icon-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.4em 0 0.1em;
+
+    text-decoration: none;
+}
+
+#topbar > .icon-container > img {
+    height: 2.4rem;
+    width: 2.4rem;
+    padding: 0.3rem;
+
+    border-radius: 0.625rem;
+}
+
+#topbar > .icon-container > span {
+    display: block;
+    margin: auto 0.1rem;
+
+    color: var(--text-color);
+    font-family: MinecraftTen;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px var(--color-primary);
+
+}
+
+
+#topbar > .links-container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin: 0.25rem 14px 0 0.4rem;
+
+    text-decoration: none;
+}
+
+#topbar > .links-container > a {
+    padding: 0.2rem 1rem 1rem 1rem;
+
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: InterBlack;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-2);
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+}
+
+#topbar > .links-container > a:hover {
+    background-color: var(--color-primary-toned);
+
+    border-color: var(--color-anticontrast);
+}
+
+#topbar > .links-container > a.current-page {
+    background-color: var(--color-primary);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-pure-anticontrast);
+}
+
+
+#topbar > .tri-dash-menu {
+    display: none;
+    margin: 0 14px 0 0.4rem;
+}
+
+#topbar > .tri-dash-menu > .button {
+    height: 100%;
+}
+
+#topbar > .tri-dash-menu:hover > .button {
+    background-color: var(--color-primary-toned);
+}
+
+#topbar > .tri-dash-menu.open > .button {
+    background-color: var(--color-primary);
+}
+
+#topbar > .tri-dash-menu.open > .button > img {
+    filter: var(--svg-icon-color-dark);
+}
+
+#topbar > .tri-dash-menu > .button > img {
+    height: 2.4rem;
+    width: 2.4rem;
+    padding: 0.3rem;
+
+    filter: var(--svg-icon-color);
+
+    cursor: pointer;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown {
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 10rem;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-primary);
+    border-width: 0.2rem 0 0.2rem 0.2rem;
+    border-style: solid;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a {
+    padding: 1.2em 0 1.2em 0;
+    margin: 0.4em 0;
+
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    font-family: InterBlack;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-2);
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a:hover {
+    background-color: var(--color-primary-toned);
+
+    border-color: var(--color-anticontrast);
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a.current-page {
+    background-color: var(--color-primary);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-pure-anticontrast);
+}
+
+#topbar > .tri-dash-menu:not(.open) > .links-dropdown {
+    display: none;
+}
+
+@media only screen and (max-width: 37.5rem) {
+    #topbar > .links-container {
+        display: none !important;
+    }
+
+    #topbar > .tri-dash-menu {
+        display: block !important;
+    }
+}
+
+/*main content*/
+
+main {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0 0;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--color-1);
+
+    image-rendering: auto;
+
+    font-family: Ubuntu;
+}
+
+#main-content > * {
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 59rem) {
+    #main-content > * {
+        max-width: 100%;
+    }
+}
+
+
+/*footer*/
+#footer {
+    display: flex;
+
+    color: var(--text-color-dark);
+    font-family: Gantari;
+
+    background-color: var(--color-lighter-black);
+}
+
+#footer > div {
+    align-self: center;
+
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer > .left-part {
+    flex: 1 0 auto;
+}
+
+#footer > .right-part {
+    flex: 1 1 auto;
+}
+
+#footer > .right-part > span {
+    color: hsl(0, 100%, 68%);
+}
+
+#footer > .right-part > a {
+    color: var(--color-link-dark);
+}
+
+#footer > div > :is(span, a) {
+    margin: 1em;
+}
+
+@media only screen and (max-width: 35rem) {
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer > div {
+        align-self: flex-start;
+    }
+
+    #footer > div > :is(span, a) {
+        margin: 0.5rem;
+    }
+}
+
+/*noscript*/
+noscript {
+    position: fixed;
+    bottom: 10px;
+    left: 5%;
+
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+noscript #noscript-text {
+    padding: 1.2em;
+
+    color: white;
+    font-family: Arial;
+    text-align: center;
+
+    background-color: rgba(15, 15, 15, 0.85);
+}
+
+#main-content p {
+    max-width: 65ch;
+    font-size: 1.2em;
+}
+
+#main-logo {
+    width: 62rem;
+    padding: 0 5%;
+    height: min-content;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+    box-sizing: border-box;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    pointer-events: none;
+}
+
+#main-content > h1 {
+    font-size: 2.2em;
+    font-weight: 750;
+    text-align: center;
+}
+
+#tagline {
+    margin-bottom: 4em;
+
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: 650;
+    text-align: center;
+}
+
+#main-content > :is(div.info-table,div.media-table) {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#main-content > :is(div.info-table,div.media-table) > h2 {
+    flex: 0 0 6em;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="34"
+   height="34"
+   viewBox="0 0 34 34"
+   class="logo-3oeRIY"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="discord.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1025">Discord Icon</title>
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     id="namedview24"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="11.129032"
+     inkscape:cx="9.9739133"
+     inkscape:cy="17.027537"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg22" />
+  <path
+     d="m 27.666479,7.3284504 c -1.9994,-0.91445 -4.1228,-1.58092 -6.3392,-1.9529 -0.279,0.48048 -0.589,1.13144 -0.806,1.64292 -2.3574,-0.34099 -4.6978,-0.34099 -7.0227,0 -0.217,-0.51148 -0.5425,-1.16244 -0.806,-1.64292 -2.23185,0.37198 -4.3552498,1.03845 -6.3406999,1.9529 -4.014299,5.9206996 -5.09925,11.7018996 -4.556776,17.4055996 2.665866,1.9374 5.238766,3.1154 7.7666961,3.8904 0.6199698,-0.837 1.1779498,-1.736 1.6584298,-2.6814 -0.91446,-0.341 -1.7824198,-0.7595 -2.6193798,-1.2555 0.21699,-0.1549 0.43399,-0.3254 0.63548,-0.4959 5.0527498,2.3094 10.5255498,2.3094 15.5162498,0 0.217,0.1705 0.4185,0.341 0.6355,0.4959 -0.837,0.496 -1.7049,0.9145 -2.6194,1.2555 0.4805,0.9454 1.0385,1.8444 1.6584,2.6814 2.5264,-0.775 5.1148,-1.953 7.7667,-3.8904 0.6664,-6.6026 -1.0555,-12.3373 -4.5273,-17.4055996 z M 11.917679,21.21575 c -1.51894,0 -2.7588798,-1.3794 -2.7588798,-3.0688 0,-1.6894 1.2089398,-3.0689 2.7588798,-3.0689 1.5344,0 2.7898,1.3795 2.7588,3.0689 0,1.6894 -1.2244,3.0688 -2.7588,3.0688 z m 10.1846,0 c -1.519,0 -2.7605,-1.3794 -2.7605,-3.0688 0,-1.6894 1.2105,-3.0689 2.7605,-3.0689 1.5344,0 2.7898,1.3795 2.7588,3.0689 0,1.6894 -1.2089,3.0688 -2.7588,3.0688 z"
+     id="path2"
+     style="fill:#000000;fill-opacity:1" />
+  <metadata
+     id="metadata1023">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Discord Icon</dc:title>
+        <dc:source>https://discord.com/</dc:source>
+        <dc:identifier>discord-icon</dc:identifier>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Discord Inc.</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

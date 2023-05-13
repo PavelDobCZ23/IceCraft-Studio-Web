@@ -1,0 +1,233 @@
+/** Basic Elements **/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 750;
+    text-align: center;
+}
+
+main > * {
+    max-width: 100%;
+    width: 100%;
+}
+
+main > .project-page > * {
+    margin: 1rem;
+}
+
+main {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/** Sidebar **/
+.sidebar:not(.compact) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    margin: 0.5rem;
+}
+
+.sidebar.compact {
+    border-radius: 0.5rem;
+    display: none !important;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    background-color: var(--color-2-trans);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 5rem;
+}
+
+.sidebar > button:hover {
+    scale: 1.1;
+}
+
+.sidebar > button {
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: 0.1rem 0.05rem;
+    border: 0.2em solid var(--color-primary);
+    background-color: var(--color-2);
+}
+
+.sidebar.compact > button {
+    font-size: 1.05rem;
+    margin: 0.4rem 0.2rem;
+}
+
+@media only screen and (max-width: 37.5rem) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar:not(.compact) {
+        display: none !important;
+    }
+
+    .sidebar.compact {
+        display: flex !important;
+    }
+}
+
+
+/** Project Page **/
+.project-page {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tags */
+.type-tag {
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+
+.type-tag[data-type="addon"] {
+    background-color: hsl(226, 72%, 47%);
+    color: white;
+}
+
+.type-tag[data-type="map"] {
+    background-color: hsl(0, 72%, 47%);
+}
+
+.type-tag[data-type="res"] {
+    background-color: hsl(109, 72%, 37%);
+}
+
+.version-tag {
+    text-decoration: underline;
+}
+
+/* Overview */
+#overview {
+    display: flex;
+    flex-direction: column;
+}
+
+#overview .basic {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#overview h1 {
+    flex: 1 0;
+    margin: 1.2rem;
+    word-wrap: break-word;
+    hyphens: manual;
+}
+
+#overview .tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#overview .thumbnail {
+    width: min(96%,66rem);
+    align-self: center;
+
+    margin: 0.5em;
+
+    border-radius: 0.8rem;
+    border: 0.2em solid var(--color-primary);
+}
+
+@media only screen and (max-width: 37.5rem) {
+    #overview .tags {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #overview .basic {
+        flex-direction: column;
+    }
+}
+
+/* Details */
+#details {
+
+}
+
+/* Screenshots */
+#screenshots {
+
+}
+
+#screenshots img {
+    cursor: zoom-in;
+}
+
+/* Last Details */
+#last-details {
+
+}
+
+/* Downloads */
+#downloads button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+
+    background-color: var(--color-primary);
+
+    border: 0.2rem solid var(--color-lighter-black);
+    padding: 0.3rem;
+}
+
+#downloads a {
+    height: fit-content;
+    margin-left: 0.5em;
+    font-family: InterBlack;
+    font-size: 1.4em;
+    text-decoration: underline;
+}
+
+#downloads button:hover {
+    scale: 105%;
+}
+
+/* Changelog */
+#changelog > div {
+    border: 0.5em solid var(--color-lighter-black);
+    background-color: var(--color-primary-toned);
+}
+
+#changelog {
+    margin: 1em;
+    max-width: 40em;
+}
+
+#changelog > div > li {
+    margin-left: 1em;
+
+}
+
+#changelog > div > h3 {
+    margin-left: 1em;
+    
+}
+
+/*! Changelog needs some version switcher */
+
+/** Image Container **/
+.image-container.open {
+
+}
+
+.image-container:not(.open) {
+
+}

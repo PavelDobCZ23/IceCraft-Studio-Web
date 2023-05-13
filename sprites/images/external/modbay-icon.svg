@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1042"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="modbay-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title21746">Modbay Icon</title>
+  <sodipodi:namedview
+     id="namedview1044"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="8.2813911"
+     inkscape:cx="313.35315"
+     inkscape:cy="200.50979"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text12408" />
+  <defs
+     id="defs1039">
+    <rect
+       x="34.309397"
+       y="95.10324"
+       width="42.73626"
+       height="46.949699"
+       id="rect3833" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g34346"
+       transform="matrix(5.759612,0,0,5.759612,-157.94805,-61.805586)">
+      <g
+         aria-label="M"
+         id="text3218"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.1;-inkscape-font-specification:'sans-serif Bold';white-space:pre;inline-size:17.6221;stroke-width:0.264583"
+         transform="matrix(1.1006502,0,0,1.0989222,14.461897,1.0631272)">
+        <path
+           id="path34279"
+           style="stroke-width:1.09978"
+           d="m 107.10352,57.388672 v 31.958984 h 7.78125 v -21.40039 l 5.93359,13.886718 h 5.69531 l 5.9336,-13.886718 v 21.40039 h 8.21289 V 57.388672 h -9.58789 l -7.17969,16.033203 -7.20117,-16.033203 z"
+           transform="matrix(0.24038821,0,0,0.24076621,-13.139413,-0.96742718)" />
+      </g>
+      <g
+         aria-label="B"
+         id="text12408"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;-inkscape-font-specification:'sans-serif Bold';fill-opacity:0;stroke:#000000;stroke-width:0.665"
+         transform="translate(-2.2327555,3.3998777)">
+        <path
+           d="m 45.76766,17.520173 c 0,0.37636 -0.07667,0.712644 -0.229999,1.008853 -0.14985,0.296208 -0.357199,0.541887 -0.622048,0.737036 -0.306668,0.229998 -0.644699,0.393784 -1.014094,0.491358 -0.36591,0.09758 -0.831139,0.146365 -1.395686,0.146365 h -3.39774 v -7.783326 h 3.021375 c 0.627274,0 1.085533,0.02091 1.374776,0.06274 0.292729,0.04183 0.581973,0.134174 0.867731,0.277043 0.296213,0.149847 0.515759,0.351966 0.658639,0.606357 0.146363,0.250905 0.219545,0.538402 0.219545,0.86249 0,0.376357 -0.09932,0.709157 -0.297956,0.998398 -0.198637,0.285753 -0.479168,0.508781 -0.841593,0.669082 v 0.04182 c 0.508789,0.101059 0.91129,0.310147 1.207504,0.627264 0.299697,0.317117 0.449546,0.735285 0.449546,1.25452 z m -2.571825,-3.199055 c 0,-0.128937 -0.03311,-0.257875 -0.09934,-0.386814 -0.06272,-0.128937 -0.175977,-0.224769 -0.339771,-0.287497 -0.146365,-0.05576 -0.329321,-0.08538 -0.548866,-0.08886 -0.216061,-0.007 -0.520987,-0.01046 -0.914776,-0.01046 H 41.1049 v 1.646575 h 0.313638 c 0.317123,0 0.587198,-0.0052 0.810227,-0.01569 0.223033,-0.01045 0.399019,-0.0453 0.527959,-0.104544 0.181211,-0.08015 0.299693,-0.182954 0.355451,-0.308405 0.05575,-0.128937 0.08366,-0.277033 0.08366,-0.444305 z m 0.491363,3.167692 c 0,-0.247421 -0.04879,-0.437344 -0.146362,-0.569767 -0.09409,-0.135907 -0.256138,-0.236966 -0.486136,-0.303179 -0.15682,-0.0453 -0.372883,-0.06969 -0.648189,-0.07318 -0.275301,-0.0035 -0.562802,-0.0053 -0.862501,-0.0053 h -0.43909 v 1.939297 h 0.146363 c 0.564547,0 0.96879,-0.0018 1.212729,-0.0053 0.243942,-0.0035 0.468716,-0.04884 0.674322,-0.135909 0.209093,-0.08712 0.351972,-0.202119 0.428639,-0.344997 0.08015,-0.146361 0.120225,-0.313631 0.120225,-0.501812 z"
+           id="path34258"
+           style="stroke-width:0.672674"
+           sodipodi:nodetypes="ccccsccscccsccccccccccsccscccccccccsccssccc" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata21744">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Modbay Icon</dc:title>
+        <dc:identifier>modbay-icon</dc:identifier>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

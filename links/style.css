@@ -1,0 +1,117 @@
+main > h1 {
+    max-width: 100%;
+}
+
+main > .page-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 80%;
+
+}
+
+.page-links > div {
+    display: flex;
+    flex-direction: column;
+    width: 14em;
+
+    font-size: 1.5rem;
+}
+
+.link-button a {
+    display: flex;
+    margin: 0.3em;
+    padding: 0.15em 0.6em;
+    box-sizing: border-box;
+
+    border-radius: 0.75em;
+
+    text-decoration: none;
+    color: var(--text-color-dark);
+
+    transition: border-radius 0.2s;
+}
+
+.link-button:hover a {
+    translate: 0px -5px;
+    box-shadow: 0.1em 0.1em 8px black;
+    border-radius: 0.3em;
+}
+
+.page-links img {
+    height: 1.6em;
+    width: 1.6em;
+    padding: 0.2em;
+
+    filter: var(--svg-icon-color-dark);
+}
+
+/*! Divide into social sites/content sites !*/
+.link-button[data-site='discord'] a {
+    background-color: hsl(235, 83%, 59%);
+}
+
+.link-button[data-site='discord']:hover a {
+    background-color: hsl(235, 73%, 49%);
+}
+
+.link-button[data-site='trello'] a {
+    background-color: hsl(202, 100%, 37%);
+}
+
+.link-button[data-site='trello']:hover a {
+    background-color: hsl(202, 90%, 27%);
+}
+
+.link-button[data-site='mcpedl'] a {
+    background-color: hsl(136, 99%, 33%);
+}
+
+.link-button[data-site='mcpedl']:hover a {
+    background-color: hsl(136, 89%, 23%);
+}
+
+.link-button a:is([title='GitHub'],[title='ModBay']) {
+    background-color: hsl(0, 10%, 10%);
+}
+
+.link-button:hover a:is([title='GitHub'],[title='ModBay']) {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.link-button[data-site='reddit'] a {
+    background-color: hsl(16, 100%, 50%);
+}
+
+.link-button[data-site='reddit']:hover a {
+    background-color: hsl(16, 90%, 40%);
+}
+
+.link-button[data-site='instagram'] a {
+    background-color: hsl(328, 60%, 49%);
+}
+
+.link-button[data-site='instagram']:hover a {
+    background-color: hsl(328, 50%, 39%);
+}
+
+.link-button[data-site='twitter'] a {
+    background-color: hsl(203, 79%, 53%);
+}
+
+.link-button[data-site='twitter']:hover a {
+    background-color: hsl(203, 79%, 43%);
+}
+
+.page-links a > span {
+    margin: auto auto;
+
+    font-family: Gantari;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 22.5rem) {
+    .page-links > div {
+        font-size: 1.1rem;
+    }
+}

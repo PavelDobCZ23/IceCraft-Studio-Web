@@ -1,0 +1,425 @@
+/* Fonts */
+@font-face {
+    font-family: "MinecraftTen";
+    src: url("/sprites/fonts/minecraft-ten.otf");
+}
+
+@font-face {
+    font-family: "InterBlack";
+    src: url("/sprites/fonts/inter-black.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/sprites/fonts/ubuntu-regular.ttf");
+}
+
+@font-face {
+    font-family: "Gantari";
+    src: url("/sprites/fonts/gantari-regular.ttf");
+}
+
+/* Styles */
+* {
+    transition-duration: 0.2s;
+    transition-property: background-color, color, border-color, text-shadow, box-shadow;
+}
+
+
+:root {
+    --responsive-threshold: 59rem; /* Useless for now */
+
+    /* Colours */
+    --color-primary-toned-light: hsl(216, 94%, 70%);
+    --color-1-light: hsla(215, 30%, 90%, 0.8);
+    --color-2-light: hsl(215, 30%, 80%);
+    --color-2-trans-light: hsla(215, 30%, 80%, 0.7);
+    --text-color-light: hsl(215, 10%, 5%);
+    --svg-icon-color-light: invert(4%) sepia(7%) saturate(916%) hue-rotate(155deg) brightness(94%) contrast(98%);
+    --color-pure-contrast-light: hsl(0, 0%, 0%);
+    --color-contrast-light: hsl(0, 0%, 13%);
+    --color-link-light: hsl(210, 100%, 40%);
+    --color-link-hover-light: hsl(210, 100%, 40%);
+    --color-link-visitied-light: hsl(210, 100%, 40%);
+
+    --color-primary-toned-dark: hsl(229, 70%, 31%);
+    --color-1-dark: hsla(215, 15%, 10%, 0.925);
+    --color-2-dark: hsl(215, 25%, 15%);
+    --color-2-trans-dark: hsla(215, 15%, 20%, 0.8);
+    --text-color-dark: hsl(215, 100%, 95%);
+    --svg-icon-color-dark: invert(97%) sepia(96%) saturate(2553%) hue-rotate(178deg) brightness(105%) contrast(108%);
+    --color-pure-contrast-dark: hsl(0, 0%, 100%);
+    --color-contrast-dark: hsl(0, 0%, 87%);
+    --color-link-dark: hsl(240, 100%, 77%);
+    --color-link-hover-dark: hsl(240, 100%, 77%);
+    --color-link-visitied-dark: hsl(240, 100%, 77%);
+
+    --color-black: hsl(0, 0%, 0%);
+    --color-lighter-black: hsl(227, 25%, 10%);
+    --color-primary: hsl(224, 80%, 45%);
+    --color-primary-trans: hsla(224, 80%, 45%, 0.8);
+}
+
+:root[legacy] {
+    --color-primary: hsl(215, 75%, 50%);
+    --color-primary-trans: hsla(215, 75%, 50%,0.8);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --color-primary-toned: var(--color-primary-toned-light);
+    --color-1: var(--color-1-light);
+    --color-2: var(--color-2-light);
+    --color-2-trans: var(--color-2-trans-light);
+    --text-color:  var(--text-color-light);
+    --svg-icon-color: var(--svg-icon-color-light);
+    --color-pure-contrast: var(--color-pure-contrast-light);
+    --color-contrast: var(--color-contrast-light);
+    --color-pure-anticontrast: var(--color-pure-contrast-dark);
+    --color-anticontrast: var(--color-contrast-dark);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-primary-toned: var(--color-primary-toned-dark);
+    --color-1: var(--color-1-dark);
+    --color-2: var(--color-2-dark);
+    --color-2-trans: var(--color-2-trans-dark);
+    --text-color:  var(--text-color-dark);
+    --svg-icon-color: var(--svg-icon-color-dark);
+    --color-pure-anticontrast: var(--color-pure-contrast-light);
+    --color-anticontrast: var(--color-contrast-light);
+}
+
+/* Styles */
+body {
+    margin: 0px;
+
+    /*pointer-events: none;*/
+    background-image: url("/sprites/images/blue-ice.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 96px;
+
+    image-rendering: pixelated;
+    
+    color: var(--text-color);
+}
+
+
+/*top bar*/
+#topbar {
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 99;
+    padding-top: 0.3rem;
+
+    background-color: var(--color-2-trans);
+    backdrop-filter: blur(8px);
+
+    border-color: var(--color-primary);
+    border-width: 0 0 0.2rem 0;
+    border-style: solid;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#topbar > .theme-toggle {
+    display: flex;
+    margin-left: auto;
+    align-self: center;
+    box-sizing: content-box;
+
+    cursor: pointer;
+
+    background-color: transparent;
+
+    border: none;
+    padding: 0.5rem;
+}
+
+#topbar > .theme-toggle:hover img {
+    /* scale: 1.2; */
+    border-width: 0;
+    width: 2rem;
+    box-shadow: 0px 0 5px 5px var(--color-primary-trans);
+}
+
+#topbar > .theme-toggle img {
+    width: 1.5rem;
+    border: 0.25em var(--color-primary) solid;
+    image-rendering: pixelated;
+}
+
+#topbar > .icon-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 0.4em 0 0.1em;
+
+    text-decoration: none;
+}
+
+#topbar > .icon-container > img {
+    height: 2.4rem;
+    width: 2.4rem;
+    padding: 0.3rem;
+
+    border-radius: 0.625rem;
+}
+
+#topbar > .icon-container > span {
+    display: block;
+    margin: auto 0.1rem;
+
+    color: var(--text-color);
+    font-family: MinecraftTen;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px var(--color-primary);
+
+}
+
+
+#topbar > .links-container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin: 0.25rem 14px 0 0.4rem;
+
+    text-decoration: none;
+}
+
+#topbar > .links-container > a {
+    padding: 0.6rem 1rem 0.6rem 1rem;
+
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: InterBlack;
+
+    background-color: transparent;
+
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+#topbar > .links-container > a:hover {
+    background-color: var(--color-primary-toned);
+
+    border-color: var(--color-anticontrast);
+}
+
+#topbar > .links-container > a.current-page {
+    background-color: var(--color-primary);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-pure-anticontrast);
+}
+
+
+#topbar .tri-dash-menu {
+    display: none;
+    margin: 0 14px 0 0.4rem;
+}
+
+#topbar .dash-menu-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0.3rem;
+
+    box-sizing: content-box;
+    display: flex;
+}
+
+#topbar > .tri-dash-menu:hover > .dash-menu-toggle {
+    background-color: var(--color-primary-toned);
+}
+
+#topbar > .tri-dash-menu.open > .dash-menu-toggle {
+    background-color: var(--color-primary);
+}
+
+#topbar > .tri-dash-menu.open > .dash-menu-toggle > img {
+    filter: var(--svg-icon-color-dark);
+}
+
+#topbar > .tri-dash-menu > .dash-menu-toggle > img {
+    width: 2.4rem;
+
+    filter: var(--svg-icon-color);
+
+    cursor: pointer;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown {
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 10rem;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-primary);
+    border-width: 0.2rem 0 0.2rem 0.2rem;
+    border-style: solid;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a {
+    padding: 1.2em 0 1.2em 0;
+    margin: 0.4em 0;
+
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    font-family: InterBlack;
+
+    background-color: var(--color-2);
+
+    border-color: var(--color-2);
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a:hover {
+    background-color: var(--color-primary-toned);
+
+    border-color: var(--color-anticontrast);
+}
+
+#topbar > .tri-dash-menu.open > .links-dropdown > a.current-page {
+    background-color: var(--color-primary);
+
+    color: var(--text-color-dark);
+
+    border-color: var(--color-pure-anticontrast);
+}
+
+#topbar > .tri-dash-menu:not(.open) > .links-dropdown {
+    display: none;
+}
+
+@media only screen and (max-width: 37.5rem) {
+    #topbar > .links-container {
+        display: none !important;
+    }
+
+    #topbar > .tri-dash-menu {
+        display: block !important;
+    }
+}
+
+/*main content*/
+main {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 1em;
+    padding-top: 4.2em; /* Fill in space that fixed topbar takes.*/
+    margin: 0 0;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--color-1);
+
+    image-rendering: auto;
+
+    font-family: Ubuntu;
+}
+
+main > * {
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 59rem) {
+    main > * {
+        max-width: 100%;
+    }
+}
+
+
+/*footer*/
+#footer {
+    display: flex;
+
+    color: var(--text-color-dark);
+    font-family: Gantari;
+
+    background-color: var(--color-lighter-black);
+}
+
+#footer > div {
+    align-self: center;
+
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer > .left-part {
+    flex: 1 0 auto;
+}
+
+#footer > .right-part {
+    flex: 1 1 auto;
+}
+
+#footer > .right-part > span {
+    color: hsl(0, 100%, 68%);
+}
+
+#footer > .right-part > a {
+    color: var(--color-link-dark);
+}
+
+#footer > div > :is(span, a) {
+    margin: 1em;
+}
+
+@media only screen and (max-width: 35rem) {
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer > div {
+        align-self: flex-start;
+    }
+
+    #footer > div > :is(span, a) {
+        margin: 0.5rem;
+    }
+}
+
+/*noscript*/
+noscript {
+    position: fixed;
+    bottom: 10px;
+    left: 5%;
+
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+noscript #noscript-text {
+    padding: 1.2em;
+
+    color: white;
+    font-family: Arial;
+    text-align: center;
+
+    background-color: rgba(15, 15, 15, 0.85);
+}

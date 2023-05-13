@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="icecraft-icon-2.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title13635">IceCraft Studio Icon</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     showgrid="false"
+     width="250mm"
+     units="mm"/>
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4514">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4510"
+         id="use4516"
+         width="100%"
+         height="100%" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#6ca3fd;fill-opacity:1;stroke-width:0.264583"
+       id="rect31"
+       width="100"
+       height="100"
+       x="0"
+       y="0"
+       ry="0"
+       rx="0" />
+    <g
+       id="g4510" />
+    <path
+       id="rect6068"
+       style="fill:#a9c8ff;stroke:#4f4f4f;stroke-width:0"
+       d="M 100,0 V 23.252367 43.575166 L 23,100 Z"
+       sodipodi:nodetypes="ccccc" />
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#4f4f4f;stroke-width:9.36793;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2850"
+       width="57.64629"
+       height="57.646294"
+       x="21.176855"
+       y="21.176853" />
+  </g>
+  <metadata
+     id="metadata13633">
+    <rdf:RDF>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+      </cc:License>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+        <dc:title>IceCraft Studio Icon</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>PavelDobCZ23</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>IceCraft Studio</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>icecraft-icon</dc:identifier>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

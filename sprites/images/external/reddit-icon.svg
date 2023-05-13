@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 20 20"
+   class="_1O4jTk-dZ-VIxsCuYB6OR8 "
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="reddit.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title823">Reddit Icon</title>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="35.95"
+     inkscape:cx="10.013908"
+     inkscape:cy="9.8887344"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     fill="#ffffff"
+     d="M 16.684785,10 A 1.4612949,1.46 0 0 0 14.212594,9 7.1263147,7.12 0 0 0 10.359179,7.77 L 11.009756,4.65 13.151654,5.1 A 1.0008869,1 0 1 0 13.281769,4.49 L 10.829596,4 A 0.31027494,0.31 0 0 0 10.459268,4.24 L 9.7186118,7.71 a 7.1463325,7.14 0 0 0 -3.9034589,1.23 1.4612949,1.46 0 1 0 -1.6114279,2.39 2.8725454,2.87 0 0 0 0,0.44 c 0,2.24 2.6123148,4.06 5.835171,4.06 3.222855,0 5.83517,-1.82 5.83517,-4.06 a 2.8725454,2.87 0 0 0 0,-0.44 A 1.4612949,1.46 0 0 0 16.684785,10 Z M 6.6759156,11 a 1.0008869,1 0 1 1 1.0008869,1 1.0008869,1 0 0 1 -1.0008869,-1 z m 5.8151534,2.75 a 3.8434057,3.84 0 0 1 -2.472191,0.77 3.8434057,3.84 0 0 1 -2.4721908,-0.77 0.27023946,0.27 0 0 1 0.380337,-0.38 3.2729002,3.27 0 0 0 2.0818448,0.63 3.282909,3.28 0 0 0 2.091854,-0.61 0.27957733,0.27932959 0 1 1 0.390346,0.4 z m -0.18016,-1.71 a 1.0008869,1 0 1 1 1.000887,-1 1.0008869,1 0 0 1 -1.010896,1.04 z"
+     id="path4"
+     style="stroke-width:1.00044;fill:#000000" />
+  <metadata
+     id="metadata821">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Reddit Icon</dc:title>
+        <dc:identifier>reddit-icon</dc:identifier>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Reddit</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:source>https://www.reddit.com/</dc:source>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,47 @@
+main p {
+    max-width: 65ch;
+    font-size: 1.2em;
+}
+
+#main-logo {
+    width: 62rem;
+    padding: 0 5%;
+    height: min-content;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+    box-sizing: border-box;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    pointer-events: none;
+}
+
+main > h1 {
+    font-size: 2.2em;
+    font-weight: 750;
+    text-align: center;
+}
+
+#tagline {
+    margin-bottom: 4em;
+
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: 650;
+    text-align: center;
+}
+
+div.info-table,div.media-table {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+:is(div.info-table,div.media-table) > h2 {
+    flex: 0 0 6em;
+    text-align: center;
+}

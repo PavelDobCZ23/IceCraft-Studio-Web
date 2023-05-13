@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+      <!-- Scripts -->
+      <script src="/base-files/web-theme.js"></script>
+      <script src="/base-files/script.js" defer></script>
+      <script src="script.js" defer></script>
+      <!-- Title -->
+      <title>IceCraft Studio</title>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Links -->
+      <link href="/sprites/images/icecraft-icon.svg" rel="icon">
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+    <body>
+        <nav id="topbar">
+            <a class="icon-container" href="/o" title="IceCraft Studio">
+                <img src="/sprites/images/icecraft-icon.svg" alt="IceCraft icon">
+                <span translate="no">IceCraft Studio</span>
+            </a>
+            <div class="theme-toggle" title="Toggle Website Theme">
+                <img src="/sprites/images/sun-moon-icon.png" alt="sun moon icon">
+            </div>
+            <div class="links-container">
+                <a class="current-page" href="/" hreflang="en" title="The home page of our web.">
+                    Home
+                </a>
+                <a href="/projects/" hreflang="en" title="Check out our maps, addons and more.">
+                    Projects
+                </a>
+                <a href="/mc-tips/" hreflang="en" title="Useful tips for minecrafters.">
+                    MC Tips
+                </a>
+                <a href="/links/" hreflang="en" title="Links to our social media accounts and other platforms.">
+                    Links
+                </a>
+            </div>
+            <!-- Small viewport fallback (doesn't work without scripts)-->
+            <div class="tri-dash-menu">
+                <div class="button">
+                    <img src="/sprites/images/tri-dash-icon.svg">
+                </div>
+                <div class="links-dropdown">
+                    <!-- Contents of this element are inserted via a script (to avoid duplicate) from #topbar > .links-container -->
+                </div>
+            </div>
+        </nav>
+        <main id="main-content">
+            <img id="main-logo" src="/sprites/images/icecraft-logo.png">
+                    <h1>Free Minecraft: Bedrock Edition maps, addons and other content</h1>
+                    <span id="tagline">Stayin' Icy and Cool</span>
+                    <div id="about-us" class="info-table">
+                        <h2>About Us</h2>
+                        <p>
+                            We are a small non-profit organisation and a community creating free and tested content for Minecraft: Bedrock Edition. 
+                            Our packs are kept supported as long as the technical state of the game allows us to, meaning 
+                            when any breaking changes occur we fix our packs to be working and updated for the latest version 
+                            of the game. Our goal is to make you enjoy the experiences we create without having to pay anything. 
+                        </p>
+                    </div>
+                    <div id="add-ons" class="media-table">
+                        <h2>Add-ons</h2>
+                        <img class="next" loading="lazy">
+                        <a>
+                            <img class="current" loading="lazy" src="">
+                        </a>
+                    </div>
+                    <div id="collaborations" class="info-table">
+                        <h2>Partners</h2>
+                        <p>
+                            IceCraft Studio is active within the community of Minecraft: Bedrock Edition and so we collaborate 
+                            with other communities to bring all the awesome creations that are out there together. We also help with 
+                            development of the creations that those communities create. 
+                        </p>
+                    </div>
+        </main>
+        <footer id="footer">
+            <div class="left-part">
+                <span>Made by PavelDobCZ23</span>
+                <span>IceCraft Studio 2020 - 2022 ©</span>
+            </div>
+            <div class="right-part">
+                <span>Not affiliated with Mojang Studios or Microsoft Corporation</span>
+                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Our Content License</a>
+            </div>
+        </footer>
+        <!-- Disabled JavaScript -->
+        <noscript>
+            <div id="noscript-text">
+                You have got JavaScript disabled in your browser! Many features of the website will not function, consider enabling it for the website to work properly.
+            </div>
+        </noscript>
+    </body>
+</html>
