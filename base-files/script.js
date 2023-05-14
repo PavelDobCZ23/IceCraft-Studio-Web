@@ -10,9 +10,9 @@ document.querySelector('#topbar > .tri-dash-menu > .dash-menu-toggle').addEventL
 
 
 function screenSizeAlert() {
-	/*const FONT_SIZE_CONSTANT = 17.5;*/
+	const FONT_SIZE_CONSTANT = 15.3;
 	const fontSize = parseInt(getComputedStyle(document.documentElement).fontSize.match(/\d+/));
-	const supportedSize = 15.3 * fontSize;
+	const supportedSize = FONT_SIZE_CONSTANT * fontSize;
 	if (screen.width < supportedSize) {
 		alert(`Your screen size is unsupported!\nYou might experience issues because the width of your screen is less than ${Math.round(supportedSize)}px. Try lowering your default font size to prevent this.\n\nScreen width = ${screen.width}px\nFont size = ${fontSize}px`);
 	}
